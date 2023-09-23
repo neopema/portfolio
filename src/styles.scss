@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap');
+
+@font-face {
+    font-family: 'Apple';
+    src: url('./assets/fonts/AppleGaramond-Italic.ttf');
+}
+
+body{
+    // colores
+    --bkg-color: #ffffff;
+    --font-color: #ffffff;
+    --yellow: rgb(252,191,9);
+    --red: rgb(237,37,78);
+    --blue: rgb(84,101,255);
+    --green: rgb(55,213,139);
+    --purple: rgb(146,47,181);
+    --orange: rgb(246,134,34);
+
+    //imagenes
+    --logo-src: url(../src/assets/images/logo.gif);
+
+    &.dark{
+        --bkg-color: #000000;
+    }
+
+    &.about{
+        --bkg-color: var(--orange);
+    }
+}
+
+html, body{
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--font-color);
+    background-color: var(--bkg-color);
+    margin: 0!important;
+    padding: 0!important;
+}
